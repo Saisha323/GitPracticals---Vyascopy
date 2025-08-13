@@ -9,13 +9,15 @@ int main(){
 
     printf("Input Data :");
     scanf("%s",bit);
+    stuff[j++]='$';
 
     for(i=0;i<strlen(bit);i++){
         if(bit[i]=='#' || bit[i]=='$')
-            stuff[i++]='#';
+            stuff[j++]='#';
         stuff[j++]=bit[i];
 
     }
+    stuff[j++]='$';
     stuff[j]='\0';
 
     printf("Stuffed Array:");
